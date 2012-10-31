@@ -11,6 +11,9 @@ set smartindent
 set hlsearch
 
 syntax on
+set background=dark
+let g:solarized_termtrans=1
+colorscheme solarized
 
 noremap <Up> <Nop>
 noremap <Down> <Nop>
