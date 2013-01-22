@@ -13,3 +13,6 @@
 [submodule "bundle/ShowMarks"]
 	path = bundle/ShowMarks
 	url = https://github.com/juanpabloaj/ShowMarks
+[submodule "bundle/cscope"]
+	path = bundle/cscope
+	url = https://github.com/portante/cscope.git
