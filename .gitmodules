@@ -16,3 +16,6 @@
 [submodule "bundle/cscope"]
 	path = bundle/cscope
 	url = https://github.com/portante/cscope.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
