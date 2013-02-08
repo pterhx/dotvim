@@ -8,6 +8,8 @@ set expandtab
 set number
 set ruler 
 
+autocmd BufRead,BufNewFile *.c,*.h set tabstop=8 shiftwidth=8
+
 set autoindent
 set smartindent
 
