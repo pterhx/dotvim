@@ -38,3 +38,5 @@ inoremap {<CR> {<CR>}<Esc>O
 :command E Ex
 
 set matchpairs+=<:>
+
+autocmd BufNewFile,BufRead *.c set formatprg=astyle\ -A8jps8H
