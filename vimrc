@@ -12,6 +12,7 @@ set autoindent
 set smartindent
 
 set hlsearch
+set incsearch
 
 syntax on
 set background=dark
@@ -26,3 +27,6 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 
 :command W w
+:command E Ex
+
+set matchpairs+=<:>
