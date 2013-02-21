@@ -45,5 +45,8 @@ autocmd FileType *.html *.erb set matchpairs+=<:>
 " Auto format in c files.
 autocmd BufNewFile,BufRead *.c set formatprg=astyle\ -A8jps8H
 
-:nmap <Leader>p :set paste!<CR>
-:nmap <Leader>l :set list!<CR>
+:nmap <leader>p :set paste!<CR>
+:nmap <leader>l :set list!<CR>
+:nnoremap <leader>o :ls<cr>:b<space>
+
+let g:syntastic_c_checkers = ['make']
