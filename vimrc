@@ -45,5 +45,5 @@ autocmd FileType *.html *.erb set matchpairs+=<:>
 " Auto format in c files.
 autocmd BufNewFile,BufRead *.c set formatprg=astyle\ -A8jps8H
 
-:nmap \p :set paste!<CR>
-:nmap \l :set list!<CR>
+:nmap <Leader>p :set paste!<CR>
+:nmap <Leader>l :set list!<CR>

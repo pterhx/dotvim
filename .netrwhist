@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/Users/peterxiao/code/SWAP/public'
 let g:netrw_dirhist_2='/Users/peterxiao/code/SWAP/public/javascripts'
+let g:netrw_dirhist_3='/Users/peterxiao/.vim'
