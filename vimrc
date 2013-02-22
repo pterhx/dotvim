@@ -47,8 +47,11 @@ autocmd BufNewFile,BufRead *.c set formatprg=astyle\ -A8jps8H
 
 :nmap <leader>p :set paste!<CR>
 :nmap <leader>l :set list!<CR>
-:nnoremap <leader>o :ls<cr>:b<space>
 :nnoremap <leader>s :setlocal spell spelllang=en_us
 :nnoremap <leader>w :set textwidth=80
 
 let g:syntastic_c_checkers = ['make']
+
+" Set up CtrlP
+let g:ctrlp_map = '<leader>o'
+let g:ctrlp_cmd = 'CtrlP'
