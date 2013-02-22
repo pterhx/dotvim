@@ -42,9 +42,6 @@ inoremap {<CR> {<CR>}<Esc>O
 " Match <> in html/erb files.
 autocmd FileType *.html *.erb set matchpairs+=<:>
 
-" Wrap by default in txt and dox files.
-autocmd FileType *.dox *.txt set textwidth=80
-
 " Auto format in c files.
 autocmd BufNewFile,BufRead *.c set formatprg=astyle\ -A8jps8H
 
@@ -52,5 +49,6 @@ autocmd BufNewFile,BufRead *.c set formatprg=astyle\ -A8jps8H
 :nmap <leader>l :set list!<CR>
 :nnoremap <leader>o :ls<cr>:b<space>
 :nnoremap <leader>s :setlocal spell spelllang=en_us
+:nnoremap <leader>w :set textwidth=80
 
 let g:syntastic_c_checkers = ['make']
