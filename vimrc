@@ -43,7 +43,7 @@ inoremap {<CR> {<CR>}<Esc>O
 autocmd FileType *.html *.erb set matchpairs+=<:>
 
 " Wrap by default in txt and dox files.
-autocmd FileType *.dox *.txt set wrap tw=80
+autocmd FileType *.dox *.txt set textwidth=80
 
 " Auto format in c files.
 autocmd BufNewFile,BufRead *.c set formatprg=astyle\ -A8jps8H
