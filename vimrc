@@ -45,6 +45,9 @@ autocmd FileType *.html *.erb set matchpairs+=<:>
 " Auto format in c files.
 autocmd BufNewFile,BufRead *.c set formatprg=astyle\ -A8jps8H
 
+"
+autocmd BufNewFile,BufRead *.tex :nnoremap <leader>c :!pdflatex %; open %:r.pdf<CR>
+
 :nmap <leader>p :set paste!<CR>
 :nmap <leader>l :set list!<CR>
 :nnoremap <leader>s :setlocal spell spelllang=en_us<CR>
