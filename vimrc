@@ -16,6 +16,9 @@ set smartindent
 set hlsearch
 set incsearch
 
+set cursorline
+set cursorcolumn
+
 " Solarized stuff.
 syntax on
 set background=dark
