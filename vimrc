@@ -55,3 +55,4 @@ let g:syntastic_c_checkers = ['make']
 " Set up CtrlP
 let g:ctrlp_map = '<leader>o'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
