@@ -42,6 +42,9 @@ inoremap {<CR> {<CR>}<Esc>O
 " :E is no longer unique.
 :command E Ex
 
+" append a semicolon
+nnoremap <leader>; A;<Esc>
+
 " Match <> in html/erb files.
 autocmd FileType *.html *.erb set matchpairs+=<:>
 
