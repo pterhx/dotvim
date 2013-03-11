@@ -65,3 +65,16 @@ let g:syntastic_c_checkers = ['make']
 let g:ctrlp_map = '<leader>o'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
+
+" Status Line {  
+  set laststatus=2                             " always show statusbar  
+  set statusline=  
+  set statusline+=%-10.3n\                     " buffer number  
+  set statusline+=%f\                          " filename   
+  set statusline+=%h%m%r%w                     " status flags  
+  set statusline+=\[%{strlen(&ft)?&ft:'none'}] " file type  
+  set statusline+=%=                           " right align remainder  
+  set statusline+=0x%-8B                       " character value  
+  set statusline+=%-14(%l,%c%V%)               " line, character  
+  set statusline+=%<%P                         " file position  
+"}  
