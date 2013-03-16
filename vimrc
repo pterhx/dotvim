@@ -38,7 +38,6 @@ inoremap {<CR> {<CR>}<Esc>O
 
 " Fixes typos.
 :command W w
-:command X x
 " :E is no longer unique.
 :command E Ex
 
