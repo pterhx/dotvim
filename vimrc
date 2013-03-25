@@ -68,7 +68,7 @@ let g:ctrlp_map = '<leader>o'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 
-" Trailing whitespace
+" Mark trailing whitespace
 match ErrorMsg '\s\+$'
 nnoremap <Leader>k :%s/\s\+$//e<CR>
 
