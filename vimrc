@@ -19,6 +19,8 @@ set incsearch
 set cursorline
 set cursorcolumn
 
+let &colorcolumn=join(range(81,999),",")
+
 " Solarized stuff.
 syntax on
 set background=dark
