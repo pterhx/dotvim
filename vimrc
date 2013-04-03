@@ -20,7 +20,7 @@ set cursorline
 set cursorcolumn
 
 " Highlight columns above 80.
-let &colorcolumn=join(range(81,999),",")
+"let &colorcolumn=join(range(81,999),",")
 
 " Solarized stuff.
 syntax on
@@ -43,9 +43,6 @@ inoremap {<CR> {<CR>}<Esc>O
 :command W w
 " :E is no longer unique.
 :command E Ex
-
-" append a semicolon
-nnoremap <leader>; A;<Esc>
 
 " Match <> in html/erb files.
 autocmd FileType *.html *.erb set matchpairs+=<:>
