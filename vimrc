@@ -20,7 +20,9 @@ set cursorline
 set cursorcolumn
 
 " Highlight columns above 80.
-"let &colorcolumn=join(range(81,999),",")
+if version > 730
+  let &colorcolumn=join(range(81,999),",")
+endif
 
 " Solarized stuff.
 syntax on
