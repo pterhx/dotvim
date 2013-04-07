@@ -20,7 +20,7 @@ set cursorline
 set cursorcolumn
 
 " Highlight columns above 80.
-if version > 730
+if v:version >= 703
   let &colorcolumn=join(range(81,999),",")
 endif
 
