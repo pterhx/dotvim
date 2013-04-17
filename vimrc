@@ -1,6 +1,7 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" Basics
 set tabstop=2
 set ls=2
 set shiftwidth=2
