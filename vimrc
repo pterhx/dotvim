@@ -71,3 +71,6 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 " Mark trailing whitespace
 match ErrorMsg '\s\+$'
 nnoremap <Leader>k :%s/\s\+$//e<CR>
+
+" Turn Filetype Plugin on for NerdCommenter
+filetype plugin on
