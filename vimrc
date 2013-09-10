@@ -1,6 +1,12 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
+
 " Basics
 set tabstop=2
 set ls=2
