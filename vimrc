@@ -7,6 +7,9 @@ set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
 
+" Make backspace work like most other apps
+set backspace=2
+
 " Basics
 set tabstop=2
 set ls=2
