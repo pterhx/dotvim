@@ -83,3 +83,6 @@ nnoremap <Leader>k :%s/\s\+$//e<CR>
 
 " Turn Filetype Plugin on for NerdCommenter
 filetype plugin on
+
+" Save files when window loses focus.
+autocmd FocusLost * silent! wa
