@@ -25,6 +25,7 @@ set smartindent
 
 set hlsearch
 set incsearch
+set smartcase
 
 set cursorline
 set cursorcolumn
