@@ -48,6 +48,9 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
+" Map spacebar to save.
+noremap <Space> :wa<CR>
+
 " More efficient bracket creation.
 inoremap {<CR> {<CR>}<Esc>O
 
@@ -85,7 +88,7 @@ nnoremap <Leader>k :%s/\s\+$//e<CR>
 filetype plugin on
 
 " Save files when window loses focus.
-autocmd FocusLost * silent! wa
+autocmd BufLeave,FocusLost * silent! wall
 
 " Kill trailing spaces each write.
 autocmd BufWritePre * :%s/\s\+$//e
