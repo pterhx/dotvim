@@ -86,3 +86,6 @@ filetype plugin on
 
 " Save files when window loses focus.
 autocmd FocusLost * silent! wa
+
+" Kill trailing spaces each write.
+autocmd BufWritePre * :%s/\s\+$//e
