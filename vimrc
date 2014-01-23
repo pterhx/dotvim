@@ -49,7 +49,7 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 
 " Map spacebar to save.
-noremap <Space> :wa<CR>
+noremap <Space> za
 
 " More efficient bracket creation.
 inoremap {<CR> {<CR>}<Esc>O
@@ -92,3 +92,6 @@ autocmd BufLeave,FocusLost * silent! wall
 
 " Kill trailing spaces each write.
 autocmd BufWritePre * :%s/\s\+$//e
+
+set foldmethod=indent
+set foldlevelstart=1
