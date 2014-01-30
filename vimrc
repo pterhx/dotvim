@@ -92,7 +92,7 @@ filetype plugin on
 autocmd BufLeave,FocusLost * silent! wall
 
 " Kill trailing spaces each write.
-autocmd BufWritePre * :%s/\s\+$//e
+" autocmd BufWritePre * :%s/\s\+$//e
 
 set foldmethod=indent
 set foldlevelstart=1
