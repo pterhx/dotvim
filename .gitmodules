@@ -3,7 +3,7 @@
 	url = git://github.com/Raimondi/delimitMate.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = git://github.com/ervandew/supertab.git
+	url = https://github.com/ervandew/supertab
 [submodule "bundle/SearchComplete"]
 	path = bundle/SearchComplete
 	url = git://github.com/vim-scripts/SearchComplete.git
