@@ -7,9 +7,6 @@
 [submodule "bundle/SearchComplete"]
 	path = bundle/SearchComplete
 	url = git://github.com/vim-scripts/SearchComplete.git
-[submodule "bundle/ShowMarks"]
-	path = bundle/ShowMarks
-	url = https://github.com/juanpabloaj/ShowMarks
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
@@ -25,9 +22,6 @@
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
-[submodule "bundle/neocomplcache.vim"]
-	path = bundle/neocomplcache.vim
-	url = https://github.com/Shougo/neocomplcache.vim
 [submodule "bundle/php.vim"]
 	path = bundle/php.vim
 	url = https://github.com/StanAngeloff/php.vim.git
