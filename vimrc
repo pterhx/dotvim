@@ -1,6 +1,11 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" Start neocomplache autocomplete
+let g:neocomplcache_enable_at_startup = 1
+" neocomplache tab completion
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 filetype off
 filetype plugin indent off
 set runtimepath+=$GOROOT/misc/vim

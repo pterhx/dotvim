@@ -1,9 +1,6 @@
 [submodule "bundle/delmitmate"]
 	path = bundle/delmitmate
 	url = git://github.com/Raimondi/delimitMate.git
-[submodule "bundle/closetag"]
-	path = bundle/closetag
-	url = git://github.com/docunext/closetag.vim.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
@@ -13,15 +10,9 @@
 [submodule "bundle/ShowMarks"]
 	path = bundle/ShowMarks
 	url = https://github.com/juanpabloaj/ShowMarks
-[submodule "bundle/cscope"]
-	path = bundle/cscope
-	url = https://github.com/portante/cscope.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/powerline"]
-	path = bundle/powerline
-	url = https://github.com/Lokaltog/powerline.git
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive
@@ -31,9 +22,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git@github.com:scrooloose/nerdcommenter.git
-[submodule "bundle/startify"]
-	path = bundle/startify
-	url = https://github.com/mhinz/vim-startify.git
 [submodule "bundle/YouCompleteMe"]
 	path = bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
