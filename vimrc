@@ -1,11 +1,6 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-" Start neocomplache autocomplete
-let g:neocomplcache_enable_at_startup = 1
-" neocomplache tab completion
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-
 filetype off
 filetype plugin indent off
 set runtimepath+=$GOROOT/misc/vim
@@ -16,9 +11,9 @@ syntax on
 set backspace=2
 
 " Basics
-set tabstop=2
+set tabstop=4
 set ls=2
-set shiftwidth=2
+set shiftwidth=4
 set expandtab
 set number
 set ruler
@@ -67,9 +62,6 @@ inoremap {<CR> {<CR>}<Esc>O
 
 " Match <> in html/erb files.
 autocmd FileType *.html *.erb set matchpairs+=<:>
-
-" Auto format in c files.
-autocmd BufNewFile,BufRead *.c set formatprg=astyle\ -A8jps8H
 
 " Hotkey for Latex files.
 autocmd BufNewFile,BufRead *.tex :nnoremap <leader>c :!pdflatex %; open %:r.pdf<CR>
