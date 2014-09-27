@@ -35,6 +35,11 @@ if v:version >= 703
   let &colorcolumn=join(range(81,999),",")
 endif
 
+" Start neocomplcache
+let g:neocomplcache_enable_at_startup = 1
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 " Solarized stuff.
 syntax on
 set background=dark
