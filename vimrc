@@ -30,9 +30,9 @@ set smartcase
 set cursorline
 set cursorcolumn
 
-" Highlight columns above 80.
+" Highlight columns above 100.
 if v:version >= 703
-  let &colorcolumn=join(range(81,999),",")
+  let &colorcolumn=join(range(101,999),",")
 endif
 
 " Start neocomplcache
@@ -84,7 +84,7 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 
 " Mark trailing whitespace
-match ErrorMsg '\s\+$'
+autocmd BufWinEnter * match ErrorMsg /\s\+$/
 nnoremap <Leader>k :%s/\s\+$//e<CR>
 
 " Turn Filetype Plugin on for NerdCommenter
