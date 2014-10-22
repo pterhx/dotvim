@@ -34,11 +34,15 @@ set cursorcolumn
 if v:version >= 703
   let &colorcolumn=join(range(101,999),",")
 endif
+:au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>100v.\+', -1)
 
 " Start neocomplcache
 let g:neocomplcache_enable_at_startup = 1
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+if !exists('g:neocomplcache_force_omni_patterns')
+  let g:neocomplcache_force_omni_patterns = {}
+endif
 
 " Solarized stuff.
 syntax on
@@ -84,6 +88,7 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 
 " Mark trailing whitespace
+match ErrorMsg /\s\+$/
 autocmd BufWinEnter * match ErrorMsg /\s\+$/
 nnoremap <Leader>k :%s/\s\+$//e<CR>
 
@@ -98,3 +103,6 @@ autocmd BufLeave,FocusLost * silent! wall
 
 set foldmethod=indent
 set foldlevelstart=1
+
+" Copy to clipboard
+set clipboard=unnamed

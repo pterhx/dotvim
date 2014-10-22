@@ -34,3 +34,6 @@
 [submodule "bundle/neocomplcache.vim"]
 	path = bundle/neocomplcache.vim
 	url = git@github.com:Shougo/neocomplcache.vim.git
+[submodule "bundle/jshint.vim"]
+	path = bundle/jshint.vim
+	url = git@github.com:walm/jshint.vim.git
