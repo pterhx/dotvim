@@ -106,3 +106,6 @@ set foldlevelstart=1
 
 " Copy to clipboard
 set clipboard=unnamed
+
+" Open QuickFix after grep
+autocmd QuickFixCmdPost *grep* cwindow
