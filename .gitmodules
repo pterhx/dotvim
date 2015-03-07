@@ -40,3 +40,6 @@
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = git@github.com:derekwyatt/vim-scala.git
+[submodule "/Users/user/.vim/bundle/vim-airline"]
+	path = /Users/user/.vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline

@@ -25,6 +25,7 @@ set smartindent
 
 set hlsearch
 set incsearch
+set ignorecase
 set smartcase
 
 set cursorline
@@ -109,3 +110,6 @@ set clipboard=unnamed
 
 " Open QuickFix after grep
 autocmd QuickFixCmdPost *grep* cwindow
+
+" Enable the mouse
+set mouse=a
